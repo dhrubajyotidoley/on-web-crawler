@@ -26,17 +26,7 @@ while True:
 driver.execute_script("window.scrollTo(99999, 0);")
 print "loading done..."
 produnt_name =driver.find_elements_by_xpath('//a[contains(@class,"product-name")]')
-desc =driver.find_elements_by_xpath('//p[contains(@class,"description-clr description-padding")]')
-cname =driver.find_elements_by_xpath('//span[contains(@class,"company-name")]')
-address =driver.find_elements_by_xpath('//span[contains(@class,"srch-add")]')
-link = driver.find_elements_by_xpath('//a[contains(@class,"g9")]')
-contact = driver.find_elements_by_xpath('//span[contains(@class,"listing-contact phone-block")]')
 i=0
 for a in produnt_name:
 	print 'produnt_name:'+a.text
-	print desc[i].text
-	print cname[i].text
-	print address[i].text
-	print link[i].text
-	print contact[i].text
 	i=i+1
