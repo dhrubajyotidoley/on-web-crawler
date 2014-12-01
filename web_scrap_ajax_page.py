@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 driver = webdriver.Firefox()
-driver.get("http://dir.indiamart.com/search.mp?ss=copper+tubes&cq=Thane")
+driver.get("http://websitenamewithajaxpages.com")
 j=2
 while True:
 	i='//div[contains(@id,"scroll'+str(j)+'")]'
